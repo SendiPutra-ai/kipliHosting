@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manajemen Membership</title>
+    <link rel="stylesheet" href="/css/member.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Membership</h1>
+      <a href="/index.html"><button type="button">Kembali</button></a>
+    </header>
+    <main>
+      <section id="form-section">
+        <h2>Pendaftaran Member Baru</h2>
+        <form id="registration-form">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="phone">Nomor Telepon:</label>
+          <input type="tel" id="phone" required />
+
+          <label for="membership-type">Tipe Membership:</label>
+          <select id="membership-type" required>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+            <option value="platinum">Platinum</option>
+          </select>
+
+          <button type="button" id="register-btn">Daftar</button>
+          <script src="dist/sweetalert2.all.min.js"></script>
+
+          <script>
+            const btn = document.getElementById('register-btn');
+            btn.addEventListener('click', function () {
+              Swal.fire({
+                title: 'Pendaftaran Berhasil',
+                text: 'Terima Kasih Telah Melakukan Pendaftaran',
+                icon: 'success',
+              });
+            });
+          </script>
+        </form>
+        <div id="member-id"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Manajemen Membership</p>
+    </footer>
+    <script src="/js/member.js"></script>
+  </body>
+</html>

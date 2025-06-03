@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #1a252f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header button {
+  color: white;
+  border: none;
+  width: 10%;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.booking-form,
+.reservation-status {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1a252f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reservation-status p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  input,
+  select,
+  button {
+    max-width: 90%; /* Kurangi lebar untuk perangkat sedang */
+  }
+}
+
+@media (max-width: 480px) {
+  input,
+  select,
+  button {
+    max-width: 100%; /* Lebar penuh untuk perangkat kecil */
+  }
+}
