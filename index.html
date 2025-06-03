@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoWork Café - Work & Relax</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bestsaller.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">CoWork Café</div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="/pages/aboutme.html">About Me</a>
+                <a href="/pages/menu.html">Menu Cafe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Work. Connect. Create.</h1>
+            <p>Your perfect workspace blend of productivity and comfort</p>
+            <a href="pages/reservasi.html"><button type="submit" class="cta-button">Book Your Space</button></a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Private Offices</h3>
+                <p>Dedicated spaces for teams and individuals seeking privacy and focus</p>
+            </div>
+            <div class="service-card">
+                <h3>Hot Desks</h3>
+                <p>Flexible workspace options perfect for digital nomads and freelancers</p>
+            </div>
+            <div class="service-card">
+                <h3>Meeting Rooms</h3>
+                <p>Professional spaces for your important meetings and presentations</p>
+            </div>
+            <div class="service-card">
+                <h3>Café Area</h3>
+                <p>Premium coffee and snacks to fuel your productivity</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="header">
+            <h1>Best Sellers</h1>
+            <p>Our most popular products this month</p>
+        </div>
+        <div class="bestseller-container" id="bestsellerContainer">
+            <!-- Products will be added here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>Membership Plans</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Day Pass</h3>
+                <div class="price">$25</div>
+                <p>Perfect for occasional visits</p>
+                <a href="/pages/member.html"><button class="cta-button">Select Plan</button></a>
+            </div>
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <div class="price">$299</div>
+                <p>Most popular choice for regulars</p>
+                <a href="/pages/member.html"><button class="cta-button">Select Plan</button></a>
+            </div>
+            <div class="price-card">
+                <h3>Corporate</h3>
+                <div class="price">Custom</div>
+                <p>Tailored solutions for teams</p>
+                <button class="cta-button">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="inner-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1405.6534549884805!2d112.76605639609097!3d-7.299190968890407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8a788b3b7%3A0x62fd2426363014e5!2sUntag!5e0!3m2!1sid!2sid!4v1734406365718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">CoWork Café</div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <img src =""></a>
+        </div>
+        <p>&copy; 2024 CoWork Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/bestsaller.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>
